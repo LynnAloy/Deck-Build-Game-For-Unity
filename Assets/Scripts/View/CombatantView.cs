@@ -25,6 +25,8 @@ public class CombatantView : MonoBehaviour
         //UpdateATKText();
     }
 
+    //Overload SetupBase for enemies with a cardview and two special characters
+
     public int CheckATKStauts()
     {
         int atkUpAmount = GetStatusEffectStacks(StatusEffectType.ATKUP);

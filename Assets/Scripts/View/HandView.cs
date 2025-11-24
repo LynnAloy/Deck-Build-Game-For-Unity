@@ -49,7 +49,9 @@ public class HandView : MonoBehaviour
             Vector3 forward = spline.EvaluateTangent(p);
             Vector3 up = spline.EvaluateUpVector(p);
             Quaternion rotation = Quaternion.LookRotation(-up, Vector3.Cross(-up, forward).normalized);
+            //Quaternion rotation = Quaternion.LookRotation(forward, up);
             cards[i].transform.DOMove(splinePosition + transform.position + 0.01f * i * Vector3.back, duration);
+            //cards[i].transform.DORotate(rotation.eulerAngles, duration);
             cards[i].transform.DORotate(rotation.eulerAngles, duration);
             
         }

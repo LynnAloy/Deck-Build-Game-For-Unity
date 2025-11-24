@@ -31,6 +31,7 @@ public class DamageSystem : MonoBehaviour
                     KillEnemyGA killenemyGA = new(enemyView);
                     ActionSystem.Instance.AddReaction(killenemyGA);
                 }
+                // Handle hero death if target is hero 
             }
         }
     }

@@ -8,14 +8,14 @@ public class ManualTargetSystem : Singleton<ManualTargetSystem>
     [SerializeField] private LayerMask targetLayerMask;
     public void StartTargeting(Vector3 startPosition)
     {
-        Debug.Log($"开始手动目标选择，起始位置: {startPosition}");
+        //Debug.Log($"开始手动目标选择，起始位置: {startPosition}");
         arrowView.gameObject.SetActive(true);
         arrowView.SetupArrow(startPosition);
     }
 
     public EnemyView EndTargeting(Vector3 endPosition)
     {
-        Debug.Log($"结束手动目标选择，结束位置: {endPosition}");
+        //Debug.Log($"结束手动目标选择，结束位置: {endPosition}");
         arrowView.gameObject.SetActive(false);
         /*
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

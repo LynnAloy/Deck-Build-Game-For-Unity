@@ -45,4 +45,9 @@ public class HeroSystem : Singleton<HeroSystem>
         DrawCardGA drawCardGA = new(5);
         ActionSystem.Instance.AddReaction(drawCardGA);
     }
+
+    private IEnumerator KillHeroPerformer(KillHeroGA killHeroGA)
+    {
+        yield return HeroView.Remove(killHeroGA.HeroView);
+    }
 }

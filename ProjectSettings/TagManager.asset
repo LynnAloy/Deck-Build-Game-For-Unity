@@ -14,7 +14,7 @@ TagManager:
   - UI
   - DropArea
   - EnemyView
-  - 
+  - ClickArea
   - 
   - 
   - 
@@ -41,4 +41,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Cover
+    uniqueID: 3522396229
+    locked: 0
+  - name: Content
+    uniqueID: 1955305267
     locked: 0

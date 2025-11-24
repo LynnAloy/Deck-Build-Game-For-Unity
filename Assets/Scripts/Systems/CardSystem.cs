@@ -20,7 +20,6 @@ public class CardSystem : Singleton<CardSystem>
         ActionSystem.AttachPerformer<DrawCardGA>(DrawCardsPerformer);
         ActionSystem.AttachPerformer<DisCardAllCardGA>(DiscardAllCardsPerformer);
         ActionSystem.AttachPerformer<PlayCardGA>(PlayCardPerformer);
-        
     }
 
     private void OnDisable()
@@ -46,7 +45,7 @@ public class CardSystem : Singleton<CardSystem>
         Debug.Log($"卡组初始化完成，卡牌数量: {drawPile.Count}");
     }
 
-    private IEnumerator DrawCardsPerformer(DrawCardGA drawCardGA)
+    protected IEnumerator DrawCardsPerformer(DrawCardGA drawCardGA)
     {
         int actualAmount = Mathf.Min(drawCardGA.Amount, drawPile.Count);
         int notDrawnAmount = drawCardGA.Amount - actualAmount;
@@ -117,7 +116,7 @@ public class CardSystem : Singleton<CardSystem>
         Destroy(cardView.gameObject);
     }
 
-    private IEnumerator PlayCardPerformer(PlayCardGA playCardGA)
+    protected IEnumerator PlayCardPerformer(PlayCardGA playCardGA)
     {
         hand.Remove(playCardGA.Card);
         CardView cardView = handView.RemoveCard(playCardGA.Card);
@@ -147,5 +146,23 @@ public class CardSystem : Singleton<CardSystem>
         discardPile.Clear();
     }
 
+    public void AddCardToDeck(Card card)
+    {
+        if(card != null)
+        {
+            drawPile.Add(card);
+        }
+    }
+
+    public void AddCardsToDeck(List<Card> cards)
+    {
+        if(cards != null)
+        {
+            foreach(var card in cards)
+            {
+                drawPile.Add(card);
+            }
+        }
+    }
 }
 

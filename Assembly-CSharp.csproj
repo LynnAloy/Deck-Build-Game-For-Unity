@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2022_3_36;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;UNITY_UGP_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;DOTWEEN;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_36;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;UNITY_UGP_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;DOTWEEN;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
@@ -64,26 +64,32 @@
     <Compile Include="Assets\Scripts\View\CardView.cs" />
     <Compile Include="Assets\Scripts\Systems\Interactions.cs" />
     <Compile Include="Assets\Scripts\CardSystem\Health.cs" />
+    <Compile Include="Assets\Scripts\GameActions\EnemyDrawTraitGA.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\Scripts\Systems\StatusEffectSystem.cs" />
+    <Compile Include="Assets\Scripts\GameActions\EnemyPlayCardGA.cs" />
     <Compile Include="Assets\Scripts\GameActions\DealDamageGA.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\Scripts\GameActions\DisCardAllCardGA.cs" />
     <Compile Include="Assets\Scripts\Systems\PerkSystem.cs" />
     <Compile Include="Assets\Scripts\Actions\DrawCardGA.cs" />
     <Compile Include="Assets\Scripts\Models\Card.cs" />
+    <Compile Include="Assets\Scripts\GameActions\AttachFavorabilityGA.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Scripts\GameActions\AttackHeroGA.cs" />
     <Compile Include="Assets\Scripts\Effect\DrawCardsEffect.cs" />
     <Compile Include="Assets\Scripts\UI\ManaUI.cs" />
+    <Compile Include="Assets\Scripts\View\EnemyCardView.cs" />
     <Compile Include="Assets\Scripts\Systems\CardSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\EffectSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\BurnSystem.cs" />
+    <Compile Include="Assets\Scripts\Data\TraitData.cs" />
     <Compile Include="Assets\Scripts\GameActions\AddStatusEffectGA.cs" />
     <Compile Include="Assets\Scripts\Models\PerkCondition.cs" />
     <Compile Include="Assets\Scripts\Systems\ATKUpSystem.cs" />
     <Compile Include="Assets\Scripts\Actions\ReactionTiming.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
+    <Compile Include="Assets\Scripts\Systems\EnemyStatusSystem.cs" />
     <Compile Include="Assets\Scripts\enums\StatusEffectType.cs" />
     <Compile Include="Assets\Scripts\GameActions\PerformEffectGA.cs" />
     <Compile Include="Assets\Scripts\TargetMode\AllEnemyTM.cs" />
@@ -102,21 +108,29 @@
     <Compile Include="Assets\Scripts\Systems\ResetSystem\ResetHeroSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\ManaSystem.cs" />
     <Compile Include="Assets\Scripts\Actions\ActionSystem.cs" />
+    <Compile Include="Assets\Scripts\State\FavorabilityState.cs" />
     <Compile Include="Assets\Scripts\Models\TargetMode.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\Scripts\Effect\AddStatusEffectEffect.cs" />
+    <Compile Include="Assets\Scripts\Creators\TraitViewCreator.cs" />
     <Compile Include="Assets\Scripts\UI\EndTurnButtonUI.cs" />
     <Compile Include="Assets\Scripts\GameActions\KillEnemyGA.cs" />
     <Compile Include="Assets\Scripts\CardSystem\DamageSystem.cs" />
+    <Compile Include="Assets\Scripts\Creators\EnemyCardViewCreator.cs" />
     <Compile Include="Assets\Scripts\Interface\IHaveCaster.cs" />
+    <Compile Include="Assets\Scripts\Systems\TraitSystem.cs" />
     <Compile Include="Assets\Scripts\View\CombatantView.cs" />
+    <Compile Include="Assets\Scripts\State\NeutralState.cs" />
     <Compile Include="Assets\Scripts\Effect\DealDamageEffect.cs" />
+    <Compile Include="Assets\Scripts\Systems\EnemyCardSystem.cs" />
     <Compile Include="Assets\Scripts\GameActions\ApplyATKUpGA.cs" />
     <Compile Include="Assets\Scripts\Systems\CardViewHoverSystem.cs" />
     <Compile Include="Assets\Scripts\Models\Perk.cs" />
     <Compile Include="Assets\Scripts\CardSystem\TestCardSystem\Minion.cs" />
+    <Compile Include="Assets\Scripts\View\TraitView.cs" />
     <Compile Include="Assets\Scripts\Models\AutoTargetEffect.cs" />
     <Compile Include="Assets\Scripts\CardSystem\TestCardSystem\Knife.cs" />
+    <Compile Include="Assets\Scripts\TargetMode\ConvertTargetMode.cs" />
     <Compile Include="Assets\Scripts\Systems\MatchEndSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\MatchSetupSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\EnemySystem.cs" />
@@ -124,29 +138,37 @@
     <Compile Include="Assets\Scripts\Systems\ManualTargetSystem.cs" />
     <Compile Include="Assets\Scripts\Data\EnemyData.cs" />
     <Compile Include="Assets\Scripts\UI\NextRoundButtonUI.cs" />
+    <Compile Include="Assets\Scripts\State\FriendlyState.cs" />
     <Compile Include="Assets\Scripts\View\HeroView.cs" />
     <Compile Include="Assets\Scripts\GameActions\SpendManaGA.cs" />
     <Compile Include="Assets\Scripts\UI\StatusEffectUI.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\Scripts\GameActions\RefillManaGA.cs" />
     <Compile Include="Assets\Scripts\UI\StatusEffectsUI.cs" />
+    <Compile Include="Assets\Scripts\Models\Trait.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Scripts\GameActions\PlayCardGA.cs" />
     <Compile Include="Assets\Scripts\TargetMode\HeroTM.cs" />
     <Compile Include="Assets\Scripts\General\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Actions\EnemyDrawCardGA.cs" />
+    <Compile Include="Assets\Scripts\State\HostileState.cs" />
     <Compile Include="Assets\Scripts\Systems\ResetSystem\ResetCardSystem.cs" />
     <Compile Include="Assets\Scripts\Creators\CardViewCreator.cs" />
     <Compile Include="Assets\Scripts\Data\CardData.cs" />
     <Compile Include="Assets\Scripts\View\ArrowView.cs" />
+    <Compile Include="Assets\Scripts\GameActions\KillHeroGA.cs" />
     <Compile Include="Assets\Scripts\Systems\TestSystem.cs" />
     <Compile Include="Assets\Scripts\PerkConditions\OnEnemyAttackCondition.cs" />
+    <Compile Include="Assets\Scripts\View\EnemyHandView.cs" />
     <Compile Include="Assets\Scripts\Systems\RewardSystem.cs" />
     <Compile Include="Assets\Scripts\TargetMode\RandomEnemyTM.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\Scripts\Systems\FavorabilitySystem.cs" />
     <Compile Include="Assets\Scripts\UI\PerkUI.cs" />
     <Compile Include="Assets\Scripts\View\EnemyBoardView.cs" />
     <Compile Include="Assets\Scripts\Actions\IncreaseStatsGA.cs" />
     <Compile Include="Assets\Scripts\GameActions\ApplyBurnGA.cs" />
+    <Compile Include="Assets\Scripts\Systems\EnemyCardViewHoverSystem.cs" />
     <Compile Include="Assets\Scripts\UI\PerksUI.cs" />
     <Compile Include="Assets\Scripts\Extensions\ListExtensions.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
@@ -176,6 +198,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX (legacy)\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Shader\CoverShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_URP.cginc" />
