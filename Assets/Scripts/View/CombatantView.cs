@@ -73,6 +73,16 @@ public class CombatantView : MonoBehaviour
         UpdateHealthText();
     }
 
+    public void Heal(int healAmount)
+    {
+        CurrentHealth += healAmount;
+        if (CurrentHealth > MaxHealth)
+        {
+            CurrentHealth = MaxHealth;
+        }
+        UpdateHealthText();
+    }
+
     public void AddStatusEffect(StatusEffectType type, int stackCount)
     {
         if(statusEffects.ContainsKey(type))

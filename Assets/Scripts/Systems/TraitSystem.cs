@@ -43,7 +43,19 @@ public class TraitSystem : Singleton<TraitSystem>
         {
             Debug.LogError("EnemyStatusSystem.Instance仍为空，无法订阅OnStatusChanged事件");
         }
+
+        if(TraitEventSystem.Instance != null)
+        {
+            TraitEventSystem.Instance.OnTraitTrigger += OnEventTriggered;
+            Debug.Log("订阅TraitEventSystem的OnTraitTrigger事件");
+        }
+        else
+        {
+            Debug.LogError("TraitEventSystem.Instance为空，无法订阅OnTraitTrigger事件");
+        }
     }
+
+    
 
     private void OnDisable()
     {
@@ -220,6 +232,7 @@ public class TraitSystem : Singleton<TraitSystem>
             
             if (trait.FavorabilityEffects == null)
             {
+
                 Debug.LogWarning($"特质 {trait} 的 FavorabilityEffects 为 null");
                 continue;
             }
@@ -243,5 +256,48 @@ public class TraitSystem : Singleton<TraitSystem>
                 count++;
             }
         }
+    }
+
+    private void OnEventTriggered(object sender, TraitEventSystem.TraitEventArgs e)
+    {
+        if(e?.Enemy == null || FavorabilitySystem.Instance == null)
+        {
+            Debug.LogError("TraitSystem.OnEventTriggered: e, Enmey, FavorSys为空");
+            return;
+        }
+
+        var traits = GetTraits(e.Enemy);
+        if(traits == null)
+        {
+            Debug.LogError("TraitSystem.OnEventTriggered:Enemy's Trait is null");
+            return;
+        }
+
+        foreach(var trait in traits)
+        {
+            if(trait.FavorabilityEffects == null)
+            {
+                Debug.Log("TraitSystem.OnEventTriggered:Trait;s FavorEff is null");
+                continue;
+            }
+
+            foreach(var effect in trait.FavorabilityEffects)
+            {
+                if(effect.Trigger == e.TriggerType)
+                {
+                    int favorabilityBefore = FavorabilitySystem.Instance.GetFavorabilityValue(e.Enemy);
+                    Debug.Log($"TSE 特质触发前：{e.Enemy.name} 好感度为 {favorabilityBefore}");
+                    FavorabilitySystem.Instance.ModifyFavorability(e.Enemy, effect.FavorabilityDelta);
+                    int favorabilityAfter = FavorabilitySystem.Instance.GetFavorabilityValue(e.Enemy);
+                    Debug.Log($"TSE 特质触发后：{e.Enemy.name} 好感度变为 {favorabilityAfter}");
+                    Debug.Log($"TSE 特质触发：{e.Enemy.name} 因{e.TriggerType}事件获得{effect.FavorabilityDelta}好感度");
+                }
+            }
+        }
+    }
+
+    internal object GetEnemiesWithTraits()
+    {
+        throw new NotImplementedException();
     }
 }
