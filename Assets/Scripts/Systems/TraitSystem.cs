@@ -44,6 +44,7 @@ public class TraitSystem : Singleton<TraitSystem>
             Debug.LogError("EnemyStatusSystem.Instance仍为空，无法订阅OnStatusChanged事件");
         }
 
+        /*
         if(TraitEventSystem.Instance != null)
         {
             TraitEventSystem.Instance.OnTraitTrigger += OnEventTriggered;
@@ -53,6 +54,7 @@ public class TraitSystem : Singleton<TraitSystem>
         {
             Debug.LogError("TraitEventSystem.Instance为空，无法订阅OnTraitTrigger事件");
         }
+        */
     }
 
     

@@ -2714,6 +2714,17 @@ Transform:
   - {fileID: 1703243540}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1062363196 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8341826725812400218, guid: b6131e9096098cd43b6f7a6914068b48, type: 3}
+  m_PrefabInstance: {fileID: 17053690}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba8189065392cd345b488efc8ebdb981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1088430203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3687,7 +3698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21514dd0d36bf7b4e803b04196a2b509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 1062363196}
   contentPanel: {fileID: 873717993}
   itemDescription: {fileID: 772638243}
   mouseFollower: {fileID: 290079281}
