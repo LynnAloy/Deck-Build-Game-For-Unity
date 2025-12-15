@@ -6,6 +6,7 @@ public class EnemyTurnGA : GameAction
 {
     public void OnClick()
     {
+
         EnemyTurnGA enemyTurnGA = new();
         ActionSystem.Instance.Perform(enemyTurnGA);
     }

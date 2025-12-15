@@ -10,6 +10,7 @@ public class CardSystem : Singleton<CardSystem>
     [SerializeField] private HandView handView;
     [SerializeField] private Transform drawPilePoint;
     [SerializeField] private Transform discardPilePoint;
+    public bool HasPlayedCardThisTurn { get; set; }
     protected readonly List<Card> drawPile = new();
     protected readonly List<Card> discardPile = new();
     protected readonly List<Card> hand = new();
@@ -118,6 +119,8 @@ public class CardSystem : Singleton<CardSystem>
 
     protected IEnumerator PlayCardPerformer(PlayCardGA playCardGA)
     {
+        HasPlayedCardThisTurn = true;
+        Debug.Log($"PlayCardPerformer: HasPlayedCardPerformer: {HasPlayedCardThisTurn}");
         hand.Remove(playCardGA.Card);
         CardView cardView = handView.RemoveCard(playCardGA.Card);
         yield return DiscardCard(cardView); 

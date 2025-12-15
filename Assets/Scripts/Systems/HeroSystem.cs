@@ -26,6 +26,7 @@ public class HeroSystem : Singleton<HeroSystem>
     {
         DisCardAllCardGA disCardAllCardGA = new();
         ActionSystem.Instance.AddReaction(disCardAllCardGA);
+        CardSystem.Instance.HasPlayedCardThisTurn = false;
     }
 
     private void EnemyTurnPostReaction(EnemyTurnGA enemyTurnGA)

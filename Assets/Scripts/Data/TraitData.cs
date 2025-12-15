@@ -12,16 +12,25 @@ public class TraitData : ScriptableObject
     [System.Serializable]
     public class FavorabilityEffect
     {
-        public enum TriggerType { OnBurn, OnDamage, OnHeal }
+        public enum TriggerType 
+        { 
+            OnBurn, 
+            OnDamage, 
+            OnHeal, 
+            OnPlayCard,
+            OnHaveItem
+        }
         public TriggerType Trigger;
-        //public int ThresholdValue;
         public int FavorabilityDelta;
     }
 
     [System.Serializable]
     public class StatusEffect
     {
-        public enum EffectType { Attack, Defense, Health }
+        public enum EffectType 
+        {
+            Attack, Defense, Health 
+        }
         public EffectType Type;
         public int Value;
         public StatusEffectType RequiredStatus;
