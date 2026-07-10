@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Demo.Editor</RootNamespace>
-    <ProjectGuid>{79E6A16A-74A0-D20A-47A1-180FE55AFC2C}</ProjectGuid>
+    <ProjectGuid>{0610FA45-BED0-E8BA-B9FE-E0121C1C1923}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>SRDemo-Editor</AssemblyName>
@@ -953,15 +953,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SREditor.csproj">
-      <Project>{9C83CFD9-63CA-548F-6500-ECF6FEAA7462}</Project>
+      <Project>{63D16C08-44D7-3B25-887F-05FDCD7C8E9F}</Project>
       <Name>SREditor</Name>
     </ProjectReference>
     <ProjectReference Include="SRDemo.csproj">
-      <Project>{A1315C4F-79FD-213B-9CF5-5BE41FD19A10}</Project>
+      <Project>{D6767BC5-9E68-2834-3EE2-9EFED15BF974}</Project>
       <Name>SRDemo</Name>
     </ProjectReference>
     <ProjectReference Include="SREditor-Editor.csproj">
-      <Project>{25F6D867-871B-C1CB-B57E-E0E4D7E392E3}</Project>
+      <Project>{98C942B1-4161-EAC3-F98A-F96B04917B21}</Project>
       <Name>SREditor-Editor</Name>
     </ProjectReference>
   </ItemGroup>

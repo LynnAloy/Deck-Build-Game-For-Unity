@@ -39,7 +39,9 @@ namespace SerializeReferenceEditor.Editor.ClassReplacer
 			
 			foreach (var assetPath in importedAssets)
 			{
-				var asset = AssetDatabase.LoadAssetAtPath<Object>(assetPath);
+				if(assetPath.StartsWith("Packages/") || assetPath.Contains("Library/") || assetPath.EndsWith(".bundle"))
+					continue;
+                var asset = AssetDatabase.LoadAssetAtPath<Object>(assetPath);
 				if (asset != null)
 				{
 					ProcessObject(asset);

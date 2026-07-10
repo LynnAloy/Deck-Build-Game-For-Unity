@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{07B423C2-B2CC-BD80-C8CE-9B7AABE55256}</ProjectGuid>
+    <ProjectGuid>{DA8650C3-3D6D-370A-C8F4-5700834113CC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -1118,47 +1118,47 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
-      <Project>{2A608050-224C-F7F2-E8AC-9A545CBE3EF0}</Project>
+      <Project>{04A746BB-9549-75DB-0113-2BB14811B6D3}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="CFXRRuntime.csproj">
-      <Project>{9DC35901-2813-81A0-1A68-3FF3A32E83D7}</Project>
+      <Project>{2BEB59ED-027A-7448-5D2B-C66563DBE9B2}</Project>
       <Name>CFXRRuntime</Name>
     </ProjectReference>
     <ProjectReference Include="CFXRDemo.csproj">
-      <Project>{B0E343C0-8073-CD8B-BAA0-2CED27BF1C79}</Project>
+      <Project>{81C93779-8E6C-D7C4-454C-CC7B5454B825}</Project>
       <Name>CFXRDemo</Name>
     </ProjectReference>
     <ProjectReference Include="SRDemo-Editor.csproj">
-      <Project>{79E6A16A-74A0-D20A-47A1-180FE55AFC2C}</Project>
+      <Project>{0610FA45-BED0-E8BA-B9FE-E0121C1C1923}</Project>
       <Name>SRDemo-Editor</Name>
     </ProjectReference>
     <ProjectReference Include="CFXR.WelcomeScreen.csproj">
-      <Project>{B4FB0AE2-BEF8-C785-52E7-808280188346}</Project>
+      <Project>{4451C7B2-B0DA-5668-7DB5-E8B2264960CC}</Project>
       <Name>CFXR.WelcomeScreen</Name>
     </ProjectReference>
     <ProjectReference Include="KinoBloom.Runtime.csproj">
-      <Project>{5250F6BC-C44B-F357-B0B8-8AAEA8A04635}</Project>
+      <Project>{3D1A6981-3AD4-58D8-3D3C-E651D3247D71}</Project>
       <Name>KinoBloom.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="SRDemo.csproj">
-      <Project>{A1315C4F-79FD-213B-9CF5-5BE41FD19A10}</Project>
+      <Project>{D6767BC5-9E68-2834-3EE2-9EFED15BF974}</Project>
       <Name>SRDemo</Name>
     </ProjectReference>
     <ProjectReference Include="SREditor-Editor.csproj">
-      <Project>{25F6D867-871B-C1CB-B57E-E0E4D7E392E3}</Project>
+      <Project>{98C942B1-4161-EAC3-F98A-F96B04917B21}</Project>
       <Name>SREditor-Editor</Name>
     </ProjectReference>
     <ProjectReference Include="CFXREditor.csproj">
-      <Project>{78084D8A-C719-8D11-9D95-C4964D18E375}</Project>
+      <Project>{96960D38-18CD-4C54-56D1-11C636E6BE53}</Project>
       <Name>CFXREditor</Name>
     </ProjectReference>
     <ProjectReference Include="SREditor.csproj">
-      <Project>{9C83CFD9-63CA-548F-6500-ECF6FEAA7462}</Project>
+      <Project>{63D16C08-44D7-3B25-887F-05FDCD7C8E9F}</Project>
       <Name>SREditor</Name>
     </ProjectReference>
     <ProjectReference Include="NewTest.csproj">
-      <Project>{2E8FD41E-1DE7-BC3F-3BC8-37CB16E8B70D}</Project>
+      <Project>{4C11AEE5-A9B4-C05A-3C0F-B24031A3D216}</Project>
       <Name>NewTest</Name>
     </ProjectReference>
   </ItemGroup>

@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>SerializeReferenceEditor.Editor </RootNamespace>
-    <ProjectGuid>{25F6D867-871B-C1CB-B57E-E0E4D7E392E3}</ProjectGuid>
+    <ProjectGuid>{98C942B1-4161-EAC3-F98A-F96B04917B21}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>SREditor-Editor</AssemblyName>
@@ -1009,7 +1009,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SREditor.csproj">
-      <Project>{9C83CFD9-63CA-548F-6500-ECF6FEAA7462}</Project>
+      <Project>{63D16C08-44D7-3B25-887F-05FDCD7C8E9F}</Project>
       <Name>SREditor</Name>
     </ProjectReference>
   </ItemGroup>

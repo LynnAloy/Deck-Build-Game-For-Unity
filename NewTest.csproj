@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Demo.NewTest</RootNamespace>
-    <ProjectGuid>{2E8FD41E-1DE7-BC3F-3BC8-37CB16E8B70D}</ProjectGuid>
+    <ProjectGuid>{4C11AEE5-A9B4-C05A-3C0F-B24031A3D216}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>NewTest</AssemblyName>
@@ -953,11 +953,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SREditor.csproj">
-      <Project>{9C83CFD9-63CA-548F-6500-ECF6FEAA7462}</Project>
+      <Project>{63D16C08-44D7-3B25-887F-05FDCD7C8E9F}</Project>
       <Name>SREditor</Name>
     </ProjectReference>
     <ProjectReference Include="SRDemo.csproj">
-      <Project>{A1315C4F-79FD-213B-9CF5-5BE41FD19A10}</Project>
+      <Project>{D6767BC5-9E68-2834-3EE2-9EFED15BF974}</Project>
       <Name>SRDemo</Name>
     </ProjectReference>
   </ItemGroup>
