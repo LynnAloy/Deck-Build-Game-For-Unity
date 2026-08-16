@@ -33,19 +33,19 @@ public class EnemyCardSystem : Singleton<EnemyCardSystem>
     {
         if(enemyView == null)
         {
-            Debug.Log("enemyViewÎª¿Õ");
+            Debug.Log("enemyViewä¸ºç©º");
             return;
         }
         var enemyDeckSet = new EnemyDeckSet();
         enemyDeckSet.DrawPilePoint = enemyView.DrawPilePoint;
         if (!enemyDeckSet.DrawPilePoint)
         {
-            Debug.Log("drawPilePoint²»´æÔÚ");
+            Debug.Log("drawPilePointä¸å­˜åœ¨");
         }
         enemyDeckSet.EnemyHandView = enemyView.EnemyHandView;
         if (!enemyDeckSet.EnemyHandView)
         {
-            Debug.Log("enemyHandView²»´æÔÚ");
+            Debug.Log("enemyHandViewä¸å­˜åœ¨");
         }
         enemyDeckSet.DrawPile.Clear();
         enemyDeckSet.Hand.Clear();
@@ -53,12 +53,12 @@ public class EnemyCardSystem : Singleton<EnemyCardSystem>
         {
             if (cardData == null)
             {
-                Debug.LogError("³¢ÊÔÌí¼Ó¿Õ¿¨ÅÆÊı¾İµ½¿¨×é£¡");
+                Debug.LogError("å°è¯•æ·»åŠ ç©ºå¡ç‰Œæ•°æ®åˆ°å¡ç»„ï¼");
                 continue;
             }
             enemyDeckSet.DrawPile.Add(new Card(cardData));
         }
-        Debug.Log($"¿¨×é³õÊ¼»¯Íê³É£¬¿¨ÅÆÊıÁ¿: {enemyDeckSet.DrawPile.Count}");
+        Debug.Log($"å¡ç»„åˆå§‹åŒ–å®Œæˆï¼Œå¡ç‰Œæ•°é‡: {enemyDeckSet.DrawPile.Count}");
         enemyDecks[enemyView] = enemyDeckSet;
 
     }
@@ -67,40 +67,40 @@ public class EnemyCardSystem : Singleton<EnemyCardSystem>
     {
         if(drawCardGA == null)
         {
-            Debug.Log("drawCardGAÎª¿Õ£¡");
+            Debug.Log("drawCardGAä¸ºç©ºï¼");
             yield break;
         }
         EnemyView target = drawCardGA.EnemyView;
         if(target == null)
         {
-            Debug.Log("Ä¿±êµĞÈËÎª¿Õ£¡");
+            Debug.Log("ç›®æ ‡æ•Œäººä¸ºç©ºï¼");
             yield break;
         }
         if(!enemyDecks.TryGetValue(target, out var enemyDeckSet))
         {
-            Debug.Log($"EnemyCardSystem:Î´ÎªÄ¿±êEnemy({target.name})³õÊ¼»¯!");
+            Debug.Log($"EnemyCardSystem:æœªä¸ºç›®æ ‡Enemy({target.name})åˆå§‹åŒ–!");
             yield break;
         }
         int actualAmount = Mathf.Min(drawCardGA.Amount, enemyDeckSet.DrawPile.Count);
         for (int i = 0; i < actualAmount; i++)
         {
-            //Debug.Log("È·ÈÏDrawCardÖ´ĞĞ");
+            //Debug.Log("ç¡®è®¤DrawCardæ‰§è¡Œ");
             yield return DrawCard(enemyDeckSet);
         }
     }
 
     private IEnumerator DrawCard(EnemyDeckSet enemyDeckSet)
     {
-        Debug.Log($"¿ªÊ¼³é¿¨£¬µ±Ç°³éÅÆ¶ÑÊıÁ¿: {enemyDeckSet.DrawPile.Count}");
+        Debug.Log($"å¼€å§‹æŠ½å¡ï¼Œå½“å‰æŠ½ç‰Œå †æ•°é‡: {enemyDeckSet.DrawPile.Count}");
         if (enemyDeckSet.DrawPile.Count == 0)
         {
-            Debug.Log("µĞÈË³éÅÆ¶ÑÎª¿Õ£¡");
+            Debug.Log("æ•ŒäººæŠ½ç‰Œå †ä¸ºç©ºï¼");
         }
         Card card = enemyDeckSet.DrawPile.Draw();
-        //Debug.Log($"³éµ½¿¨ÅÆ: {card?.Title ?? "null"}");
+        //Debug.Log($"æŠ½åˆ°å¡ç‰Œ: {card?.Title ?? "null"}");
         if (card == null)
         {
-            Debug.Log("µĞÈË³éÈ¡µ½¿ÕÅÆ£¡");
+            Debug.Log("æ•ŒäººæŠ½å–åˆ°ç©ºç‰Œï¼");
             yield break;
         }
         enemyDeckSet.Hand.Add(card);
@@ -109,7 +109,7 @@ public class EnemyCardSystem : Singleton<EnemyCardSystem>
         EnemyCardView enemyCardView = EnemyCardViewCreator.Instance.CreateCardView(card, spawnPoint, Quaternion.identity);
         if (enemyCardView == null)
         {
-            Debug.LogError("´´½¨µĞÈË¿¨ÅÆÊÓÍ¼Ê§°Ü£¡");
+            Debug.LogError("åˆ›å»ºæ•Œäººå¡ç‰Œè§†å›¾å¤±è´¥ï¼");
             yield break;
         }
         if (enemyDeckSet.EnemyHandView != null)
@@ -123,7 +123,7 @@ public class EnemyCardSystem : Singleton<EnemyCardSystem>
         }
         else
         {
-            Debug.Log("EnemyCardSystem:HandVewÎª¿Õ");
+            Debug.Log("EnemyCardSystem:HandVewä¸ºç©º");
             Destroy(enemyCardView.gameObject);
             yield break;
         }
@@ -134,7 +134,7 @@ public class EnemyCardSystem : Singleton<EnemyCardSystem>
         foreach(var effectWrapper in playCardGA.Card.OtherEffects)
         {
             List<CombatantView> targets = effectWrapper.TargetMode.GetTargets();
-            PerformEffectGA performEffectGA = new(effectWrapper.Effect, targets);
+            PerformEffectGA performEffectGA = new(effectWrapper.Effect, targets, playCardGA.Card.ConfigId);
             ActionSystem.Instance.AddReaction(performEffectGA);
         }
         yield return null;
@@ -148,12 +148,12 @@ public class EnemyCardSystem : Singleton<EnemyCardSystem>
         }
         if (!enemyDecks.TryGetValue(enemy, out var deckSet))
         {
-            Debug.Log($"EnemyCardSystem:Î´Îª({enemy.name})ÕÒµ½¶ÔÓ¦¿¨×éÊı¾İ!");
+            Debug.Log($"EnemyCardSystem:æœªä¸º({enemy.name})æ‰¾åˆ°å¯¹åº”å¡ç»„æ•°æ®!");
             yield break;
         }
         if(deckSet.Hand.Count == 0)
         {
-            Debug.Log("µĞÈËÊÖÅÆÎª¿Õ£¬ÎŞ·¨³öÅÆ£¡");
+            Debug.Log("æ•Œäººæ‰‹ç‰Œä¸ºç©ºï¼Œæ— æ³•å‡ºç‰Œï¼");
             yield break;
         }
         int index = UnityEngine.Random.Range(0, deckSet.Hand.Count);
@@ -161,8 +161,8 @@ public class EnemyCardSystem : Singleton<EnemyCardSystem>
         foreach(var effectWrapper in cardToPlay.OtherEffects)
         {
             List<CombatantView> targets = effectWrapper.TargetMode.GetTargets();
-            Debug.Log($"µĞÈËÊ¹ÓÃ¿¨ÅÆ: {cardToPlay.Title}");
-            PerformEffectGA performEffectGA = new(effectWrapper.Effect, targets);
+            Debug.Log($"æ•Œäººä½¿ç”¨å¡ç‰Œ: {cardToPlay.Title}");
+            PerformEffectGA performEffectGA = new(effectWrapper.Effect, targets, cardToPlay.ConfigId);
             ActionSystem.Instance.AddReaction(performEffectGA);
             yield return new WaitForSeconds(0.15f);
         }

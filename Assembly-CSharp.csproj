@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Data\PerkData.cs" />
     <Compile Include="Assets\Scripts\View\CardView.cs" />
     <Compile Include="Assets\Scripts\Systems\Interactions.cs" />
+    <Compile Include="Assets\XLua\Src\DelegateBridge.cs" />
     <Compile Include="Assets\Scripts\CardSystem\Health.cs" />
     <Compile Include="Assets\Scripts\GameActions\EnemyDrawTraitGA.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
@@ -70,7 +71,10 @@
     <Compile Include="Assets\Scripts\Inventory\UI\UIInventoryDescription.cs" />
     <Compile Include="Assets\Scripts\Inventory\Data\ItemParameterSO.cs" />
     <Compile Include="Assets\Scripts\Systems\StatusEffectSystem.cs" />
+    <Compile Include="Assets\Scripts\HotUpdate\LuaSmokeTest.cs" />
     <Compile Include="Assets\Scripts\GameActions\EnemyPlayCardGA.cs" />
+    <Compile Include="Assets\XLua\Gen\Tutorial_ICalcWrap.cs" />
+    <Compile Include="Assets\XLua\Src\TemplateEngine\TemplateEngine.cs" />
     <Compile Include="Assets\Scripts\GameActions\DealDamageGA.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\Scripts\GameActions\DisCardAllCardGA.cs" />
@@ -80,18 +84,26 @@
     <Compile Include="Assets\Scripts\Models\Card.cs" />
     <Compile Include="Assets\Scripts\Inventory\Util\PickupSystem.cs" />
     <Compile Include="Assets\Scripts\GameActions\AttachFavorabilityGA.cs" />
+    <Compile Include="Assets\XLua\Src\ObjectCasters.cs" />
+    <Compile Include="Assets\XLua\Gen\WrapPusher.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Scripts\GameActions\AttackHeroGA.cs" />
     <Compile Include="Assets\Scripts\Effect\DrawCardsEffect.cs" />
     <Compile Include="Assets\Scripts\UI\ManaUI.cs" />
+    <Compile Include="Assets\XLua\Src\LuaEnv.cs" />
     <Compile Include="Assets\Scripts\View\EnemyCardView.cs" />
+    <Compile Include="Assets\XLua\Tutorial\CSharpCallLua\CSCallLua.cs" />
     <Compile Include="Assets\Scripts\Systems\CardSystem.cs" />
+    <Compile Include="Assets\XLua\Src\CopyByValue.cs" />
     <Compile Include="Assets\Scripts\Systems\EffectSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\BurnSystem.cs" />
     <Compile Include="Assets\Scripts\Data\TraitData.cs" />
     <Compile Include="Assets\Scripts\GameActions\AddStatusEffectGA.cs" />
+    <Compile Include="Assets\XLua\Src\LuaDLL.cs" />
+    <Compile Include="Assets\XLua\Src\LuaException.cs" />
     <Compile Include="Assets\Scripts\Models\PerkCondition.cs" />
     <Compile Include="Assets\Scripts\Systems\ATKUpSystem.cs" />
+    <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\Loader\CustomLoader.cs" />
     <Compile Include="Assets\Scripts\Actions\ReactionTiming.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\Scripts\Inventory\Data\EdibleItemSO.cs" />
@@ -100,23 +112,30 @@
     <Compile Include="Assets\Scripts\GameActions\PerformEffectGA.cs" />
     <Compile Include="Assets\Scripts\Inventory\Item.cs" />
     <Compile Include="Assets\Scripts\TargetMode\AllEnemyTM.cs" />
+    <Compile Include="Assets\Scripts\HotUpdate\LuaVersionManifest.cs" />
+    <Compile Include="Assets\XLua\Gen\PackUnpack.cs" />
     <Compile Include="Assets\Scripts\TargetMode\NoTM.cs" />
     <Compile Include="Assets\Scripts\Actions\GameAction.cs" />
     <Compile Include="Assets\Scripts\CardSystem\Card.cs" />
     <Compile Include="Assets\Scripts\Systems\HeroSystem.cs" />
+    <Compile Include="Assets\XLua\Src\SignatureLoader.cs" />
     <Compile Include="Assets\Scripts\Models\Effect.cs" />
+    <Compile Include="Assets\Scripts\HotUpdate\LuaConfigDelegates.cs" />
+    <Compile Include="Assets\Scripts\HotUpdate\LuaConfigService.cs" />
+    <Compile Include="Assets\XLua\Src\TypeExtensions.cs" />
     <Compile Include="Assets\Scripts\Creators\EnemyViewCreator.cs" />
     <Compile Include="Assets\Scripts\General\Util\MouseUtil.cs" />
     <Compile Include="Assets\Scripts\GameActions\EnemyTurnGA.cs" />
     <Compile Include="Assets\Scripts\Systems\ResetSystem\ResetEnemySystem.cs" />
     <Compile Include="Assets\Scripts\View\EnemyView.cs" />
-    <Compile Include="Assets\Scripts\GameActions\PeformEffectGA.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\Scripts\Inventory\Data\CharacterStateModifierSO.cs" />
     <Compile Include="Assets\Scripts\Systems\ResetSystem\ResetHeroSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\ManaSystem.cs" />
+    <Compile Include="Assets\XLua\Src\GenAttributes.cs" />
     <Compile Include="Assets\Scripts\Actions\ActionSystem.cs" />
     <Compile Include="Assets\Scripts\State\FavorabilityState.cs" />
+    <Compile Include="Assets\Scripts\HotUpdate\LuaRuntime.cs" />
     <Compile Include="Assets\Scripts\Models\TargetMode.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\Scripts\Inventory\Data\InventorySO.cs" />
@@ -124,6 +143,8 @@
     <Compile Include="Assets\Scripts\Effect\AddStatusEffectEffect.cs" />
     <Compile Include="Assets\Scripts\Creators\TraitViewCreator.cs" />
     <Compile Include="Assets\Scripts\Actions\UseInventoryItemGA.cs" />
+    <Compile Include="Assets\XLua\Src\MethodWarpsCache.cs" />
+    <Compile Include="Assets\XLua\Src\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\UI\EndTurnButtonUI.cs" />
     <Compile Include="Assets\Scripts\GameActions\KillEnemyGA.cs" />
     <Compile Include="Assets\Scripts\CardSystem\DamageSystem.cs" />
@@ -131,80 +152,107 @@
     <Compile Include="Assets\Scripts\Interface\IHaveCaster.cs" />
     <Compile Include="Assets\Scripts\Systems\TraitSystem.cs" />
     <Compile Include="Assets\Scripts\View\CombatantView.cs" />
+    <Compile Include="Assets\XLua\Src\RawObject.cs" />
     <Compile Include="Assets\Scripts\State\NeutralState.cs" />
     <Compile Include="Assets\Scripts\Effect\DealDamageEffect.cs" />
     <Compile Include="Assets\Scripts\Systems\EnemyCardSystem.cs" />
     <Compile Include="Assets\Scripts\GameActions\ApplyATKUpGA.cs" />
+    <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\ByFile.cs" />
     <Compile Include="Assets\Scripts\Systems\CardViewHoverSystem.cs" />
     <Compile Include="Assets\Scripts\Models\Perk.cs" />
     <Compile Include="Assets\Scripts\Inventory\UI\UIInventoryPage.cs" />
     <Compile Include="Assets\Scripts\CardSystem\TestCardSystem\Minion.cs" />
+    <Compile Include="Assets\XLua\Src\GenericDelegateBridge.cs" />
     <Compile Include="Assets\Scripts\View\TraitView.cs" />
     <Compile Include="Assets\Scripts\Models\AutoTargetEffect.cs" />
     <Compile Include="Assets\Scripts\CardSystem\TestCardSystem\Knife.cs" />
+    <Compile Include="Assets\XLua\Src\LuaFunction.cs" />
+    <Compile Include="Assets\XLua\Gen\Tutorial_BaseClassWrap.cs" />
+    <Compile Include="Assets\XLua\Src\LuaTable.cs" />
     <Compile Include="Assets\Scripts\TargetMode\ConvertTargetMode.cs" />
     <Compile Include="Assets\Scripts\Systems\MatchEndSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\MatchSetupSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\EnemySystem.cs" />
+    <Compile Include="Assets\XLua\Src\Utils.cs" />
     <Compile Include="Assets\Scripts\View\HandView.cs" />
     <Compile Include="Assets\Scripts\Systems\ManualTargetSystem.cs" />
     <Compile Include="Assets\Scripts\Data\EnemyData.cs" />
     <Compile Include="Assets\Scripts\UI\NextRoundButtonUI.cs" />
+    <Compile Include="Assets\XLua\Gen\DelegatesGensBridge.cs" />
     <Compile Include="Assets\Scripts\State\FriendlyState.cs" />
     <Compile Include="Assets\Scripts\View\HeroView.cs" />
     <Compile Include="Assets\Scripts\GameActions\SpendManaGA.cs" />
     <Compile Include="Assets\Scripts\UI\StatusEffectUI.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\Scripts\GameActions\RefillManaGA.cs" />
+    <Compile Include="Assets\XLua\Src\StaticLuaCallbacks.cs" />
     <Compile Include="Assets\Scripts\UI\StatusEffectsUI.cs" />
     <Compile Include="Assets\Scripts\Models\Trait.cs" />
     <Compile Include="Assets\Scripts\Inventory\Data\EquippableItemSO.cs" />
     <Compile Include="Assets\Scripts\Inventory\Data\ItemSO.cs" />
+    <Compile Include="Assets\XLua\Gen\Tutorial_CSCallLua_ItfDBridge.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Scripts\GameActions\PlayCardGA.cs" />
     <Compile Include="Assets\Scripts\TargetMode\HeroTM.cs" />
+    <Compile Include="Assets\XLua\Src\LuaBase.cs" />
+    <Compile Include="Assets\XLua\Src\InternalGlobals.cs" />
     <Compile Include="Assets\Scripts\General\Singleton.cs" />
+    <Compile Include="Assets\Scripts\HotUpdate\HotUpdateBootstrap.cs" />
+    <Compile Include="Assets\XLua\Gen\EnumWrap.cs" />
     <Compile Include="Assets\Scripts\Inventory\Data\CharacterStateHealthModifier.cs" />
     <Compile Include="Assets\Scripts\Actions\EnemyDrawCardGA.cs" />
+    <Compile Include="Assets\XLua\Gen\Tutorial_DerivedClassExtensionsWrap.cs" />
     <Compile Include="Assets\Scripts\State\HostileState.cs" />
     <Compile Include="Assets\Scripts\Systems\ResetSystem\ResetCardSystem.cs" />
     <Compile Include="Assets\Scripts\Creators\CardViewCreator.cs" />
     <Compile Include="Assets\Scripts\Data\CardData.cs" />
     <Compile Include="Assets\Scripts\View\ArrowView.cs" />
+    <Compile Include="Assets\XLua\Gen\Tutorial_DerivedClassWrap.cs" />
     <Compile Include="Assets\Scripts\Inventory\UI\UIInventoryItem.cs" />
     <Compile Include="Assets\Scripts\GameActions\KillHeroGA.cs" />
+    <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByString\ByString.cs" />
     <Compile Include="Assets\Scripts\Systems\TestSystem.cs" />
     <Compile Include="Assets\Scripts\PerkConditions\OnEnemyAttackCondition.cs" />
     <Compile Include="Assets\Scripts\View\EnemyHandView.cs" />
+    <Compile Include="Assets\XLua\Gen\XLuaGenAutoRegister.cs" />
+    <Compile Include="Assets\XLua\Src\CodeEmit.cs" />
     <Compile Include="Assets\Scripts\Systems\RewardSystem.cs" />
     <Compile Include="Assets\Scripts\TargetMode\RandomEnemyTM.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
     <Compile Include="Assets\Scripts\Inventory\Util\ItemActionPanel.cs" />
     <Compile Include="Assets\Scripts\Systems\FavorabilitySystem.cs" />
+    <Compile Include="Assets\XLua\Tutorial\LuaCallCSharp\LuaCallCs.cs" />
     <Compile Include="Assets\Scripts\Inventory\Util\MouseFollower.cs" />
+    <Compile Include="Assets\Scripts\HotUpdate\LuaUpdateService.cs" />
+    <Compile Include="Assets\XLua\Src\ObjectTranslatorPool.cs" />
     <Compile Include="Assets\Scripts\UI\PerkUI.cs" />
     <Compile Include="Assets\Scripts\View\EnemyBoardView.cs" />
     <Compile Include="Assets\Scripts\Actions\IncreaseStatsGA.cs" />
     <Compile Include="Assets\Scripts\GameActions\ApplyBurnGA.cs" />
+    <Compile Include="Assets\XLua\Src\ObjectTranslator.cs" />
     <Compile Include="Assets\Scripts\Systems\EnemyCardViewHoverSystem.cs" />
     <Compile Include="Assets\Scripts\UI\PerksUI.cs" />
     <Compile Include="Assets\Scripts\Extensions\ListExtensions.cs" />
+    <Compile Include="Assets\Scripts\HotUpdate\FileHashUtility.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\Scripts\Data\HeroData.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX (legacy)\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_SETTINGS.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX (legacy)\CartoonFX Free.txt" />
+    <None Include="Assets\XLua\Resources\xlua\util.lua.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\XLua\Resources\perf\profiler.lua.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
@@ -213,7 +261,9 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Prefabs\Texts\_Make your own text effect.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_PASSES.cginc" />
+    <None Include="Assets\XLua\Resources\perf\memory.lua.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\XLua\Gen\link.xml" />
     <None Include="Assets\JMO Assets\Cartoon FX (legacy)\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Shader\CoverShader.shader" />
@@ -221,6 +271,8 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_URP.cginc" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\XLua\Resources\tdr\tdr.lua.txt" />
+    <None Include="Assets\XLua\CHANGELOG.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
@@ -1283,10 +1335,6 @@
       <Project>{81C93779-8E6C-D7C4-454C-CC7B5454B825}</Project>
       <Name>CFXRDemo</Name>
     </ProjectReference>
-    <ProjectReference Include="SRDemo-Editor.csproj">
-      <Project>{0610FA45-BED0-E8BA-B9FE-E0121C1C1923}</Project>
-      <Name>SRDemo-Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="CFXR.WelcomeScreen.csproj">
       <Project>{4451C7B2-B0DA-5668-7DB5-E8B2264960CC}</Project>
       <Name>CFXR.WelcomeScreen</Name>
@@ -1294,10 +1342,6 @@
     <ProjectReference Include="KinoBloom.Runtime.csproj">
       <Project>{3D1A6981-3AD4-58D8-3D3C-E651D3247D71}</Project>
       <Name>KinoBloom.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="SRDemo.csproj">
-      <Project>{D6767BC5-9E68-2834-3EE2-9EFED15BF974}</Project>
-      <Name>SRDemo</Name>
     </ProjectReference>
     <ProjectReference Include="SREditor-Editor.csproj">
       <Project>{98C942B1-4161-EAC3-F98A-F96B04917B21}</Project>
@@ -1310,10 +1354,6 @@
     <ProjectReference Include="SREditor.csproj">
       <Project>{63D16C08-44D7-3B25-887F-05FDCD7C8E9F}</Project>
       <Name>SREditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="NewTest.csproj">
-      <Project>{4C11AEE5-A9B4-C05A-3C0F-B24031A3D216}</Project>
-      <Name>NewTest</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

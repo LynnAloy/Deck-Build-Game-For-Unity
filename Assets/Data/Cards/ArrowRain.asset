@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e975afb7edf755447a7e60be3021b317, type: 3}
   m_Name: ArrowRain
   m_EditorClassIdentifier: 
+  <ConfigId>k__BackingField: arrow_rain
   <Description>k__BackingField: Really a lot of arrows!
   <Mana>k__BackingField: 4
   <Image>k__BackingField: {fileID: 21300000, guid: 72aedd65526bb754f9444ef14531f204, type: 3}

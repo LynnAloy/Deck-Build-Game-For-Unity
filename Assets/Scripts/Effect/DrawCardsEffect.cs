@@ -6,7 +6,7 @@ public class DrawCardsEffect : Effect
 {
     [SerializeField] private int drawAmount;
 
-    public override GameAction GetGameAction(List<CombatantView> targets, CombatantView caster)
+    public override GameAction GetGameAction(List<CombatantView> targets, CombatantView caster, string sourceConfigId = null)
     {
         DrawCardGA drawCardGA = new(drawAmount);
         return drawCardGA;

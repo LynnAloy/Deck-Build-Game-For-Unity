@@ -21,7 +21,22 @@ public class DamageSystem : MonoBehaviour
     {
         foreach (var target in dealDamageGA.Targets)
         {
-            target.Damage(dealDamageGA.Amount);
+            float targetHpPercent = target.MaxHealth > 0 ? (float)target.CurrentHealth / target.MaxHealth : 1f;
+            int finalDamage = dealDamageGA.Amount;
+            if (LuaConfigService.Instance != null)
+            {
+                finalDamage = LuaConfigService.Instance.CalculateDamageOrDefault(
+                    dealDamageGA.SourceConfigId,
+                    dealDamageGA.Amount,
+                    targetHpPercent
+                );
+            }
+            Debug.Log(
+                $"[DamageSystem] id={dealDamageGA.SourceConfigId}, " +
+                $"base={dealDamageGA.Amount}, final={finalDamage}, " +
+                $"targetHp={targetHpPercent:P0}"
+            );
+            target.Damage(finalDamage);
             Instantiate(damageVFX, target.transform.position, Quaternion.identity);
             yield return new WaitForSeconds(0.25f);
             if(target.CurrentHealth <= 0)

@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PeformEffectGA : MonoBehaviour
+public class PerformEffectGA : GameAction
 {
-    // Start is called before the first frame update
-    void Start()
+    public Effect Effect { get; set; }
+    public List<CombatantView> Targets { get; set; }
+    public string SourceConfigId { get; }
+    public PerformEffectGA(Effect effect, List<CombatantView> targets, string sourceConfigId)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Effect = effect;
+        Targets = targets == null ? null : new(targets);
+        SourceConfigId = sourceConfigId;
     }
 }

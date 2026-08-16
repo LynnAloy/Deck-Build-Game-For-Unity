@@ -16,7 +16,6 @@ public class NextRoundButtonUI : MonoBehaviour
         resetCardSystem.ResetCards();
         resetHeroSystem.ResetHero();
         resetEnemySystem.ResetEnemy();
-        matchEndSystem.delayCheck = false;
-        matchEndSystem.endCheck = false;
+        matchEndSystem.ResetState();
     }
 }

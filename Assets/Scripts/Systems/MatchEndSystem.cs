@@ -1,88 +1,105 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class MatchEndSystem : MonoBehaviour
 {
+    [SerializeField] private MatchSetupSystem matchSetupSystem;
     [SerializeField] private EnemyBoardView enemyBoardView;
     [SerializeField] private HeroView heroView;
     [SerializeField] private float delayDuration;
     [SerializeField] private float endDelayDuration;
     [SerializeField] private GameObject endGameScreen;
-    private List<EnemyView> Enemies => enemyBoardView.EnemyViews;
-    private EnemyView enemyView;
-    private CombatantView combatantView;
-    private int maxMana;
-    public bool delayCheck = false;
-    public bool endCheck = false;
 
-    void Update()
+    private Coroutine pendingGameOverCheck;
+    private bool endCheck;
+
+    private void Update()
     {
-        if(!delayCheck)
+        if (matchSetupSystem == null || !matchSetupSystem.IsInitialized)
         {
-            StartCoroutine(Delay());
-            delayCheck = true;
+            return;
         }
-        else
+
+        if (endCheck || pendingGameOverCheck != null)
         {
-            if (IsGameOver() && !endCheck)
-            {
-                endCheck = true;
-                Debug.Log("Game Over");
-                HandleGameOver();
-            }
+            return;
+        }
+
+        if (IsGameOver())
+        {
+            pendingGameOverCheck = StartCoroutine(ConfirmGameOver());
         }
     }
 
-    private IEnumerator Delay()
+    private IEnumerator ConfirmGameOver()
     {
         yield return new WaitForSeconds(delayDuration);
-    }
+        pendingGameOverCheck = null;
 
-    
-    private IEnumerator EndDelay()
-    {
-        yield return new WaitForSeconds(endDelayDuration);
-        EnableEndGameScreen();
-        Time.timeScale = 0;
+        if (endCheck || !IsGameOver())
+        {
+            yield break;
+        }
+
+        endCheck = true;
+        Debug.Log("Game Over");
+        HandleGameOver();
     }
 
     private void HandleGameOver()
     {
         bool hasEnemies = enemyBoardView != null &&
-                   enemyBoardView.EnemyViews != null &&
-                   enemyBoardView.EnemyViews.Count > 0;
+                          enemyBoardView.EnemyViews != null &&
+                          enemyBoardView.EnemyViews.Count > 0;
+
         bool hasHero = heroView != null && heroView.CurrentHealth > 0;
+
         CardSystem.Instance.IsGameOver = true;
+
         if (!hasEnemies && hasHero)
         {
             Debug.Log("You Win!");
             RewardSystem.Instance.ApplyWin();
             StartCoroutine(EndDelay());
         }
-        if (hasEnemies && !hasHero)
+        else if (hasEnemies && !hasHero)
         {
             Debug.Log("You Lose!");
             RewardSystem.Instance.ApplyLose();
             StartCoroutine(EndDelay());
         }
-        
     }
 
     private bool IsGameOver()
     {
-        //Debug.Log("Over");
         bool hasEnemies = enemyBoardView != null &&
-                  enemyBoardView.EnemyViews != null &&
-                  enemyBoardView.EnemyViews.Count > 0;
+                          enemyBoardView.EnemyViews != null &&
+                          enemyBoardView.EnemyViews.Count > 0;
+
         bool hasHero = heroView != null && heroView.CurrentHealth > 0;
         return !hasEnemies || !hasHero;
+    }
+
+    private IEnumerator EndDelay()
+    {
+        yield return new WaitForSeconds(endDelayDuration);
+        EnableEndGameScreen();
+        Time.timeScale = 0f;
     }
 
     private void EnableEndGameScreen()
     {
         endGameScreen.SetActive(true);
+    }
+
+    public void ResetState()
+    {
+        if (pendingGameOverCheck != null)
+        {
+            StopCoroutine(pendingGameOverCheck);
+            pendingGameOverCheck = null;
+        }
+
+        endCheck = false;
     }
 }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e975afb7edf755447a7e60be3021b317, type: 3}
   m_Name: ATK Up
   m_EditorClassIdentifier: 
+  <ConfigId>k__BackingField: atk_up
   <Description>k__BackingField: Add 5 ATK...JUST NOW
   <Mana>k__BackingField: 2
   <Image>k__BackingField: {fileID: 21300000, guid: 12e6c24a2d3aa6340ac329e608f1ac63, type: 3}

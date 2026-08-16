@@ -37,17 +37,18 @@ public class CardSystem : Singleton<CardSystem>
         {
             if(cardData == null)
             {
-                Debug.LogError("³¢ÊÔÌí¼Ó¿Õ¿¨ÅÆÊı¾İµ½¿¨×é£¡");
+                Debug.LogError("å°è¯•æ·»åŠ ç©ºå¡ç‰Œæ•°æ®åˆ°å¡ç»„ï¼");
                 continue;
             }
             Card card = new(cardData);
             drawPile.Add(card);
         }
-        Debug.Log($"¿¨×é³õÊ¼»¯Íê³É£¬¿¨ÅÆÊıÁ¿: {drawPile.Count}");
+        Debug.Log($"å¡ç»„åˆå§‹åŒ–å®Œæˆï¼Œå¡ç‰Œæ•°é‡: {drawPile.Count}");
     }
 
     protected IEnumerator DrawCardsPerformer(DrawCardGA drawCardGA)
     {
+        Debug.Log($"[CardSystem] Draw performer entered. Amount={drawCardGA.Amount}");
         int actualAmount = Mathf.Min(drawCardGA.Amount, drawPile.Count);
         int notDrawnAmount = drawCardGA.Amount - actualAmount;
         for (int i = 0; i < actualAmount; i++)
@@ -82,13 +83,13 @@ public class CardSystem : Singleton<CardSystem>
         }
         if (drawPile.Count == 0)
         {
-            Debug.LogWarning("³éÅÆ¶ÑÒÑ¿Õ£¬ÎŞ·¨³éÅÆ£¡");
+            Debug.LogWarning("æŠ½ç‰Œå †å·²ç©ºï¼Œæ— æ³•æŠ½ç‰Œï¼");
             yield break;
         }
         Card card = drawPile.Draw();
         if (card == null)
         {
-            Debug.LogError("³éÅÆÊ±µÃµ½¿Õ¿¨ÅÆ£¡");
+            Debug.LogError("æŠ½ç‰Œæ—¶å¾—åˆ°ç©ºå¡ç‰Œï¼");
             yield break;
         }
         hand.Add(card);
@@ -100,12 +101,12 @@ public class CardSystem : Singleton<CardSystem>
     {
         if (discardPile.Count == 0)
         {
-            Debug.LogWarning("ÆúÅÆ¶ÑÒÑ¿Õ£¬ÎŞ·¨²¹³ä³éÅÆ¶Ñ£¡");
+            Debug.LogWarning("å¼ƒç‰Œå †å·²ç©ºï¼Œæ— æ³•è¡¥å……æŠ½ç‰Œå †ï¼");
             return;
         }
         drawPile.AddRange(discardPile);
         discardPile.Clear();
-        Debug.Log("³éÅÆ¶ÑÒÑ²¹³ä£¬µ±Ç°¿¨ÅÆÊıÁ¿: " + drawPile.Count);
+        Debug.Log("æŠ½ç‰Œå †å·²è¡¥å……ï¼Œå½“å‰å¡ç‰Œæ•°é‡: " + drawPile.Count);
     }
 
     private IEnumerator DiscardCard(CardView cardView)
@@ -128,13 +129,13 @@ public class CardSystem : Singleton<CardSystem>
         ActionSystem.Instance.AddReaction(spendManaGA);
         if(playCardGA.Card.ManualTargetEffect != null)
         {
-            PerformEffectGA performEffectGA = new(playCardGA.Card.ManualTargetEffect, new() { playCardGA.ManualTarget });
+            PerformEffectGA performEffectGA = new(playCardGA.Card.ManualTargetEffect, new() { playCardGA.ManualTarget }, playCardGA.Card.ConfigId);
             ActionSystem.Instance.AddReaction(performEffectGA);
         }
         foreach (var effectWrapper in playCardGA.Card.OtherEffects)
         {
             List<CombatantView> targets = effectWrapper.TargetMode.GetTargets();
-            PerformEffectGA performEffectGA = new(effectWrapper.Effect, targets);
+            PerformEffectGA performEffectGA = new(effectWrapper.Effect, targets, playCardGA.Card.ConfigId);
             ActionSystem.Instance.AddReaction(performEffectGA);
         }
     }
